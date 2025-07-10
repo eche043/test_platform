@@ -1,0 +1,40 @@
+###
+
+# curl --location 'https://api.cicmu.cnam.dev.veone.net/identity/v1/rest/auth/tokens'
+#--header 'Accept: application/json'
+#--header 'X-Application-Id: 8b52b960-0392-4ba7-94fd-aab0a66c8bf5'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#    "identity": {
+#        "methods": [
+#            "password"
+#        ],
+#        "password": {
+#            "user": {
+#                "username": "dognimin.koulibali@ipscnam.ci",
+#                "password": "Cnam@2023"
+#            }
+#        }
+#    }
+#}'
+POST https://api.cicmu.cnam.dev.veone.net/identity/v1/rest/auth/tokens
+Accept: application/json
+X-Application-Id: 8b52b960-0392-4ba7-94fd-aab0a66c8bf5
+Content-Type: application/json
+
+{
+  "identity": {
+    "methods": [
+      "password"
+    ],
+    "password": {
+      "user": {
+        "username": "dognimin.koulibali@ipscnam.ci",
+        "password": "Cnam@2023"
+      }
+    }
+  }
+}
+
+###
+
